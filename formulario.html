@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+<body>
+    <!--ACTION= foms.html method= POST / GET-->
+    <form action="#" method="#">
+        <h2>Mi Formulario</h2>
+        <p>
+            <!--TIPO TEXT-->
+            <label for="name">Nombre:</label>
+            <input type="text" required id="name" placeholder="Ingrese su nombre">
+        </p>
+        <p>
+            <!--TIPO EMAIL-->
+            <label for="correo"  >Correo electronico:</label>
+            <input type="email" placeholder="Ingrese su correo" required >
+        </p>
+        <p>
+            <!--TIPO FILE-->
+            <label for="file">Archivo:</label>
+            <input type="file" name="file" id="file">
+        </p>
+        <p>
+            <!--TIPO PASSWORD-->
+            <label for="password">Contraseña:</label>
+            <input type="password" name="password" id="password" placeholder="Contraseña" required> 
+        </p>
+        <p>
+            <!--TIPO CHECKBOX-->
+            <label for="checbox">Deportes:</label>
+            <input type="checkbox"  id="checbox" > Futbol
+            <input type="checkbox"  id="checbox" > Basquet
+            <input type="checkbox"  id="checbox" > Voleibol
+            <input type="checkbox"  id="checbox" > Otros
+        </p>
+        <p>
+            <!--TIPO RADIO-->
+            <label for="radio">Sexo:</label>
+            <input type="radio" name="gen" id="masc">Hombre
+            <input type="radio" name="gen" id="masc">Mujer
+            <input type="radio" name="gen" id="masc">Alien
+        </p>
+        <p>
+            <!--TIPO SELECTED-->
+            <label for="menu">Menu:</label>
+            <select name="select" id="menu">
+                <option value="valor1">Licuado de manzana</option>
+                <option value="valor1" selected>Licuado de banana</option>
+                <option value="valor1">Licuado de frutilla</option>
+            </select>
+        </p>
+        <p>
+            <!--TIPO COLOR-->
+            <label for="color">Color favorito:</label>
+            <input type="color" id="color" value="#ffffff">
+        </p>
+        <p>
+            <label for="nac">Fecha nacimiento:</label>
+            <input type="date" name="nac" id="nac">
+        </p>
+        <input type="submit" value="Enviar" > 
+
+        <a href="./forms.html"><input type="button" value="Otra pagina"></a>
+
+    </form>
+</body>
+</html>
