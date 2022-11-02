@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica FORMULARIO - TABLAS</title>
+</head>
+<body>
+    <h1>Página de reservas del Hotel "Cochabamba"</h1>
+    <div>
+        <p>Lista de precios de habitaciones</p>
+        <table border="1px">
+            <thead>
+                <tr>
+                    <th>Tipo de habitación</th>
+                    <th>N° de personas</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Doble</td>
+                    <td>2</td>
+                    <td>57 BS.</td>
+                </tr>
+                <tr>
+                    <td>Triple</td>
+                    <td>3</td>
+                    <td>81 Bs.</td>
+                </tr>
+                <tr>
+                    <td>Siute</td>
+                    <td>2</td>
+                    <td>125 Bs</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <dir>
+        <form action="">
+            <fieldset>
+                <legend>Hotel La Parada</legend>
+                <div>
+                    <label for="name">Nombre:*</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div>
+                    <label for="lastname">Apellidos:*</label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </div><br>
+                <div>
+                    <label for="email">E-mail:*</label>
+                    <input type="text" placeholder="tu@email.com" required>
+                </div><br>
+                <div>
+                    <label for="reserva">Fecha reserva:*</label>
+                    <input type="date" id="reserva" required>
+                </div><br>
+                <div>
+                    <label for="hab">Tipo de habitación:</label><br>
+                    <input type="radio" name="hab" id="hab">Doble
+                    <input type="radio" name="hab" id="hab">Triple
+                    <input type="radio" name="hab" id="hab">Suite
+                </div><br>
+                <div>
+                    <label for="extras">Extras opcionales:</label><br>
+                    <input type="checkbox" name="extras" id="extras"> Incluir desayuno (+12Bs/día) <br>
+                    <input type="checkbox" name="extras" id="extras"> Parqueo (+13Bs/día)
+                </div><br><br>
+                <div>
+                    <label for="textarea">Comentarios sobre su reserva</label><br>
+                    <textarea name="textarea" id="textarea" cols="80" rows="4" placeholder="Escriba aquí sus comentarios"></textarea>
+                </div>
+                <input type="submit" value="¡Reservar!">
+                <input type="reset" value="Limpiar formulario">
+            </fieldset>
+        </form>
+    </dir>
+</body>
+</html>
